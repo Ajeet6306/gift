@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine day's special</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
+.container-main{
+    
+      border: solid 0.6rem #777;
+      border-radius: 8px;
+      padding: 50px 30px;
+      background-color: rgb(190, 201, 170);
+}
+.title-heading{
+    display: flex;
+    flex-direction: column;
+    font-size:1.5rem ;
+}
+p{
+    font-size: 2.2rem;
+   margin-left: 20px;
+}
+
+.image-section,img{
+    margin-top: 20px;
+display: flex;
+justify-content: center;
+}
+.button,a{
+    display: flex;
+    justify-content: space-between;
+margin-top: 20px;
+}
+button{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    border: 1.3px solid green;
+    border-radius: 34px;
+   
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.author,p{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    font-size:1rem;
+}
+a{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    font-size:1rem;
+    text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+    <div class="container-main">
+        <div class="title-heading">
+            <p id="text">Will You Marry Me?<br>
+             If yes than select button yes given below </p> 
+       </div>
+<div class="image-section"> 
+    <img src="first.jpg" id="asking" alt="image">
+</div>
+<div class="button">
+    <button type="button" onclick="yes()">Yes</button>
+    <button type="button" onclick="no()">No</button>
+</div>
+<div class="author">
+    <p> Requested By--Ajeet Singh</p>
+</div>
+<div class="button">
+    <a href="index.html"> <<----Back to Main Page</a></div>
+    
+    </div>
+    <script>
+function yes(){
+ let yes=document.getElementById("asking").src = "second.jpg";
+let text=document.getElementById("text").innerHTML="  I love you so much Tanya,  You are the bestest girl.<br> I ever met in this World,You are my everything.<br>Kahne ko to bahut kuchh hai lekin bas yhi kahunga ki <br><br> ! HAPPY VALENTINE'S DAY !";
+}
+
+function no(){
+    let no=document.getElementById("asking").src = "third.jpg";
+    let mytext=document.getElementById("text").innerHTML="You are not a good girl Tipu.You broke my heart.<br> Ye button click krne se pahle hath nhi kapa tumhara <br>jaao mai ab tumse baat nhi krunga<br> huh pgli kahinki!";
+
+}
+    </script>
+    
+</body>
+</html>
